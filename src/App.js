@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@mui/material";
+import React from "react";
+import Navbar from "./SmallComponents/Navbar";
+import Home from "./Components/Home";
+import Story from "./Components/Story";
+import CheemsonSection from "./Components/CheemsonSection";
+import Roadmap from "./Components/Roadmap";
+import HowToBuy from "./Components/HowToBuy";
+import Faq from "./Components/Faq";
+import Footer from "./Components/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <Navbar />
+      <Home />
+      <Story />
+      <CheemsonSection />
+      <Roadmap />
+      <HowToBuy />
+      <Faq />
+      <Footer />
+    </Box>
   );
-}
+};
 
 export default App;
